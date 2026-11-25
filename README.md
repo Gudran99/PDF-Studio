@@ -2,13 +2,15 @@
 
 **A free, browser-based PDF editor. No document uploads, backend, or database.**
 
+[**Launch PDF Studio**](https://gudran99.github.io/PDF-Studio/) · [Report an issue](https://github.com/Gudran99/PDF-Studio/issues)
+
 ## Overview
 
 PDF Studio is a static web application designed to edit PDF files locally in the browser. It uses PDF.js for rendering and PDF-lib for writing documents.
 
 ## Quick start
 
-After the source files are uploaded, run from the project root:
+To run locally, execute from the project root:
 
 ```bash
 python -m http.server 8000
@@ -34,8 +36,9 @@ Documents are processed in the browser. Fontkit is loaded from jsDelivr when sav
 
 ## Roadmap
 
-- [ ] Upload complete application source and bundled resources
-- [ ] Verify deployment and add screenshots
+- [x] Upload application source and bundled resources
+- [x] Publish GitHub Pages deployment
+- [ ] Test live application and add screenshots
 - [ ] Improve offline support and test document editing
 - [ ] Confirm project license and contribution guidelines
 
