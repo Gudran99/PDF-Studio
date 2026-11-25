@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/banner.svg" alt="PDF Studio — free browser-based PDF editor" width="100%"></p>
+
 # PDF Studio
 
 **A free, browser-based PDF editor. No document uploads, backend, or database.**
