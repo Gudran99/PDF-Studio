@@ -40,8 +40,9 @@ Documents are processed in the browser. Fontkit is loaded from jsDelivr when sav
 - [x] Publish GitHub Pages deployment
 - [ ] Test live application and add screenshots
 - [ ] Improve offline support and test document editing
-- [ ] Confirm project license and contribution guidelines
+- [x] Add MIT license for original project code
+- [ ] Add contribution guidelines and verify third-party license compliance
 
 ## License
 
-Project license pending. Preserve all bundled third-party license notices.
+Original project code is released under the [MIT License](LICENSE). Bundled third-party libraries, fonts and other assets remain subject to their respective licenses and notices in `licenses/` and accompanying files.
