@@ -1,0 +1,27 @@
+# PDF Studio – Apache settings (cPanel / shared hosting)
+
+# Correct MIME types for JavaScript modules, WebAssembly, fonts and the web manifest
+AddType text/javascript .mjs
+AddType application/wasm .wasm
+AddType font/ttf .ttf
+AddType application/manifest+json .webmanifest
+AddType application/octet-stream .bcmap .pfb .icc
+
+# Compression: makes text files 3-4x smaller in transit
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/plain text/javascript application/javascript application/json application/manifest+json application/wasm font/ttf image/svg+xml
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/javascript application/javascript application/json application/manifest+json application/wasm font/ttf image/svg+xml
+</IfModule>
+
+# Caching: libraries, fonts and icons are kept for 30 days; the page itself is always re-checked
+<IfModule mod_headers.c>
+  <FilesMatch "\.(mjs|js|wasm|ttf|bcmap|pfb|icc|png|svg|webmanifest)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
