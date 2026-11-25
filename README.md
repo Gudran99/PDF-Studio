@@ -8,6 +8,14 @@
 
 PDF Studio is a static web application designed to edit PDF files locally in the browser. It uses PDF.js for rendering and PDF-lib for writing documents.
 
+## Features
+
+- Edit existing text in text-based PDFs and add new text.
+- Insert and crop images, highlight, draw and add shapes.
+- Create fillable text fields.
+- Merge, rotate, reorder, duplicate and delete pages.
+- Export edited documents without an account or watermark.
+
 ## Quick start
 
 To run locally, execute from the project root:
@@ -41,7 +49,12 @@ Documents are processed in the browser. Fontkit is loaded from jsDelivr when sav
 - [ ] Test live application and add screenshots
 - [ ] Improve offline support and test document editing
 - [x] Add MIT license for original project code
-- [ ] Add contribution guidelines and verify third-party license compliance
+- [x] Add contribution guidelines and issue templates
+- [ ] Verify third-party license compliance
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development and contribution instructions, and [CHANGELOG.md](CHANGELOG.md) for project changes.
 
 ## License
 
